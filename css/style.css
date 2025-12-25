@@ -78,11 +78,30 @@ hr {
   padding: 17px 28px;
   border-radius: 30px;
 }
+.types-of-pizza:hover {
+  background: #282828;
+  color: #fff;
+  transition: 0.3s;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  background-image: url("/img/triangl.svg"); /* Или URL PNG/JPG */
+  background-repeat: no-repeat;
+  background-position: left 10px center; /* Позиция стрелки */
+  padding-left: 30px; /* Отступ для текста */
+  font-size: 16px;
+}
+.types {
+  color: #fe5f1e;
+  border-bottom: 2px dotted rgba(254, 95, 30, 0.7);
+}
 @media (max-width: 1750px) {
   .mobile-menu {
     width: 100%;
   }
 }
+
 @media (max-width: 499px) {
   .mobile-menu-title {
     font-size: 15px;
@@ -107,6 +126,7 @@ hr {
     line-height: 1;
   }
 }
+
 @media (max-width: 425px) {
   .mobile-menu-subtitle {
     word-break: break-all;
