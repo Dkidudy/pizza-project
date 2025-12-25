@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 36px;
+}
+.mobile-menu-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.mobile-menu-text {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.mobile-menu-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #7b7b7b;
+  margin-top: 2px;
+}
+.mobile-menu-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background: #fe5f1e;
+  white-space: nowrap;
+}
+.button-divider {
+  width: 1px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.button-icon {
+  display: block;
+}
+.button-count {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
