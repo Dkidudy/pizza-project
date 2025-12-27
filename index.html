@@ -8,15 +8,17 @@
   </head>
   <body>
     <header class="desc-menu">
-      <div class="menu-left">
-        <svg class="logo" width="38" height="38">
-          <use href="img/header-pz.svg"></use>
-        </svg>
-        <div class="menu-text">
-          <span class="menu-title">REACT PIZZA</span>
-          <span class="menu-subtitle">самая вкусная пицца во вселенной</span>
+      <a class="desc-logo-block" href="/index.html">
+        <div class="logo-block">
+          <svg class="logo" width="38" height="38">
+            <use href="img/header-pz.svg"></use>
+          </svg>
+          <div class="menu-text">
+            <span class="menu-title">REACT PIZZA</span>
+            <span class="menu-subtitle">самая вкусная пицца во вселенной</span>
+          </div>
         </div>
-      </div>
+      </a>
       <!-- desc-menu -->
       <button class="menu-button">
         <span class="button-text">520 &#8381;</span>
@@ -29,17 +31,17 @@
       <!-- menu-button -->
     </header>
     <hr color="#F6F6F6" />
-
     <div class="menu-wrapper">
-      <ul class="menu">
-        <li class="menu-item">Все</li>
-        <li class="menu-item">Мясные</li>
-        <li class="menu-item">Вегетарианская</li>
-        <li class="menu-item">Гриль</li>
-        <li class="menu-item">Острые</li>
-        <li class="menu-item">Закрытые</li>
-      </ul>
-
+      <div class="menuLimiter">
+        <ul class="menu">
+          <li class="menu-item">Все</li>
+          <li class="menu-item">Мясные</li>
+          <li class="menu-item">Вегетарианская</li>
+          <li class="menu-item">Гриль</li>
+          <li class="menu-item">Острые</li>
+          <li class="menu-item">Закрытые</li>
+        </ul>
+      </div>
       <div class="sort">
         <span class="sort-label">Сортировать по:</span>
         <select class="types">
