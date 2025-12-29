@@ -5,58 +5,54 @@ body {
   margin: 0;
   font-family: "Proxima Nova", Arial, sans-serif;
 }
-.mobile-menu {
+.desc-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px 36px;
 }
-.mobile-menu-left {
+.logo-block {
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
-.mobile-menu-text {
+.menu-text {
   display: flex;
   flex-direction: column;
 }
-.mobile-menu-title {
+.menu-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.1;
   text-transform: uppercase;
 }
-.mobile-menu-subtitle {
+.menu-subtitle {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   color: #7b7b7b;
   margin-top: 2px;
 }
-.mobile-menu-button {
-  display: inline-flex;
+.menu-button {
+  display: flex;
   align-items: center;
   gap: 10px;
-  height: 50px;
-  padding: 0 18px;
+  padding: 15px 18px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1;
   color: #fff;
   background: #fe5f1e;
-  white-space: nowrap;
 }
 .button-divider {
   width: 1px;
   height: 24px;
   background: rgba(255, 255, 255, 0.25);
 }
-.button-icon {
-  display: block;
-}
+
 .button-count {
   font-weight: 700;
   font-size: 16px;
@@ -67,71 +63,146 @@ hr {
   height: 0;
   overflow: visible;
 }
+.desc-logo-block {
+  text-decoration: none;
+  color: #282828;
+}
 .menu {
   display: flex;
   list-style-type: none;
   gap: 9px;
   margin-top: 20px;
 }
-.types-of-pizza {
+.menu-item {
   background: #f9f9f9;
   padding: 17px 28px;
   border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.types-of-pizza:hover {
+.menu-item:hover {
   background: #282828;
   color: #fff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 select {
   border: none;
-  -webkit-appearance: none;
-  background-image: url("/img/triangl.svg"); /* Или URL PNG/JPG */
+  background-image: url("/img/triangl.svg");
   background-repeat: no-repeat;
-  background-position: left 10px center; /* Позиция стрелки */
-  padding-left: 30px; /* Отступ для текста */
+  background-position: left 10px center;
+  padding-left: 30px;
   font-size: 16px;
 }
 .types {
   color: #fe5f1e;
   border-bottom: 2px dotted rgba(254, 95, 30, 0.7);
 }
-@media (max-width: 1750px) {
-  .mobile-menu {
-    width: 100%;
-  }
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 36px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-@media (max-width: 499px) {
-  .mobile-menu-title {
+@media (max-width: 1150px) {
+  .menu-wrapper {
+    padding: 1.125rem 1.75rem;
+  }
+  .menu-item {
+    padding: 0.9375rem 1.375rem;
+  }
+  .menu-title {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1040px) {
+  .menu {
+    gap: 8px;
+  }
+  .menu-item {
+    padding: 14px 20px;
+  }
+  select {
     font-size: 15px;
   }
-  .mobile-menu-subtitle {
+}
+@media (max-width: 997px) {
+  .desc-menu {
+    padding: 18px 22px;
+  }
+  .menu-wrapper {
+    padding: 16px 22px;
+    gap: 14px;
+  }
+  .menu-item {
+    padding: 12px 18px;
+  }
+  .sort-label {
+    white-space: wrap;
+  }
+}
+@media (max-width: 973px) {
+  .menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 634px) {
+  .menu-wrapper {
+    margin-left: auto;
+  }
+  .menu-limiter {
+    width: 100%;
+    padding: 10px 10px;
+    overflow-x: scroll;
+    margin-left: auto;
+  }
+  .menu-limiter::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media (max-width: 499px) {
+  .menu-title {
+    font-size: 15px;
+  }
+  .menu-subtitle {
     font-size: 12px;
-  }
-  .pizza-part {
-    width: 40px;
-  }
-  .mobile-menu-subtitle {
     white-space: nowrap;
     width: 25px;
   }
-  .mobile-menu-button {
-    display: inline-flex;
+  .logo {
+    width: 40px;
+  }
+  .menu-button {
+    display: flex;
     align-items: center;
     gap: 5px;
-    height: 40px;
-    padding: 0 10px;
+    padding: 10px 15px;
     font-size: 14px;
-    line-height: 1;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .sort {
+    align-self: flex-end;
   }
 }
 
-@media (max-width: 425px) {
-  .mobile-menu-subtitle {
+@media (max-width: 430px) {
+  .menu-subtitle {
     word-break: break-all;
   }
-  .pizza-part {
+  .logo {
     display: none;
   }
 }

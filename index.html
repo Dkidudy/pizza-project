@@ -7,20 +7,20 @@
     <title>React pizza</title>
   </head>
   <body>
-    <div class="mobile-menu">
-      <div class="mobile-menu-left">
-        <svg class="pizza-part" width="38" height="38">
-          <use href="img/header-pz.svg"></use>
-        </svg>
-        <div class="mobile-menu-text">
-          <div class="mobile-menu-title">REACT PIZZA</div>
-          <div class="mobile-menu-subtitle">
-            самая вкусная пицца во вселенной
+    <header class="desc-menu">
+      <a class="desc-logo-block" href="/index.html">
+        <div class="logo-block">
+          <svg class="logo" width="38" height="38">
+            <use href="img/header-pz.svg"></use>
+          </svg>
+          <div class="menu-text">
+            <span class="menu-title">REACT PIZZA</span>
+            <span class="menu-subtitle">самая вкусная пицца во вселенной</span>
           </div>
         </div>
-      </div>
-      <!-- mobile-menu -->
-      <button class="mobile-menu-button">
+      </a>
+      <!-- desc-menu -->
+      <button class="menu-button">
         <span class="button-text">520 &#8381;</span>
         <span class="button-divider"></span>
         <svg class="button-icon" width="18" height="18">
@@ -28,28 +28,28 @@
         </svg>
         <span class="button-count">3</span>
       </button>
-      <!-- mobile-button -->
-    </div>
+      <!-- menu-button -->
+    </header>
     <hr color="#F6F6F6" />
-    <div class="mobile-menu-wrapper">
-      <ul class="menu">
-        <li class="types-of-pizza">Все</li>
-        <li class="types-of-pizza">Мясные</li>
-        <li class="types-of-pizza">Вегетарианская</li>
-        <li class="types-of-pizza">Гриль</li>
-        <li class="types-of-pizza">Острые</li>
-        <li class="types-of-pizza">Закрытые</li>
-      </ul>
+    <div class="menu-wrapper">
+      <div class="menu-limiter">
+        <ul class="menu">
+          <li class="menu-item">Все</li>
+          <li class="menu-item">Мясные</li>
+          <li class="menu-item">Вегетарианская</li>
+          <li class="menu-item">Гриль</li>
+          <li class="menu-item">Острые</li>
+          <li class="menu-item">Закрытые</li>
+        </ul>
+      </div>
+      <div class="sort">
+        <span class="sort-label">Сортировать по:</span>
+        <select class="types">
+          <option>популярности</option>
+          <option>по цене</option>
+          <option>по алфавиту</option>
+        </select>
+      </div>
     </div>
-    <!-- mobile-menu-wrapper -->
-    <form>
-      <label for="sort">Cортировать по:</label>
-      <select class="types">
-        <option>популярности</option>
-        <option>по цене</option>
-        <option>по алфавиту</option>
-      </select>
-      <br /><br />
-    </form>
   </body>
 </html>
