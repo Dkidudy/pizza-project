@@ -111,6 +111,7 @@ select {
   align-items: center;
   gap: 10px;
 }
+
 @media (max-width: 1150px) {
   .menu-wrapper {
     padding: 1.125rem 1.75rem;
@@ -158,13 +159,13 @@ select {
   .menu-wrapper {
     margin-left: auto;
   }
-  .menuLimiter {
+  .menu-limiter {
     width: 100%;
     padding: 10px 10px;
     overflow-x: scroll;
     margin-left: auto;
   }
-  .menuLimiter::-webkit-scrollbar {
+  .menu-limiter::-webkit-scrollbar {
     width: 0;
   }
 }
