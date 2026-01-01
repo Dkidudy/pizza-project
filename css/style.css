@@ -111,7 +111,129 @@ select {
   align-items: center;
   gap: 10px;
 }
+.section-title {
+  margin-left: 55px;
+  font-size: 30px;
+  color: #000000;
+}
+.pizza-wrapper {
+  margin-left: 60px;
+  gap: 190px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.pizza-item {
+  list-style: none;
+}
+.check-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  background: #f6f6f6;
+  border-radius: 14px;
+  width: 355px;
+}
+.check-grid .check {
+  flex: 0 0 calc((100% - 10px) / 2);
+}
 
+.check {
+  position: relative;
+  display: block;
+}
+
+.check-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 14px;
+  border-radius: 10px;
+  font: 600 13px/1 system-ui;
+  color: #2b2b2b;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+.second-check-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  width: 345px;
+}
+.second-check-grid .check {
+  flex: 0 0 calc((100% - 20px) / 3);
+}
+.check-input:checked + .check-box {
+  background: #fff;
+  border-color: #ececec;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.price-quantity {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  max-width: 355px;
+  margin-top: 10px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #282828;
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 23px;
+  border: 3px solid;
+  border-radius: 100px;
+  background: #fff;
+  color: #fe5f1e;
+  font-size: 20px;
+  cursor: pointer;
+}
+.pill-quantity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: #fe5f1e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pill-full {
+  background: #fe5f1e;
+  color: #fff;
+  border-color: #fe5f1e;
+  padding: 10px 19px;
+}
+.pill-full,
+.pill-plus {
+  font-size: 24px;
+  font-weight: 400;
+}
+.price-full {
+  gap: 93px;
+}
+.section-pizza-second {
+  margin-top: 80px;
+}
 @media (max-width: 1150px) {
   .menu-wrapper {
     padding: 1.125rem 1.75rem;
@@ -147,6 +269,10 @@ select {
   }
   .sort-label {
     white-space: wrap;
+  }
+  .pizza-wrapper {
+    justify-content: center;
+    margin-left: auto;
   }
 }
 @media (max-width: 973px) {
@@ -196,6 +322,9 @@ select {
   .sort {
     align-self: flex-end;
   }
+  .pizza-wrapper {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 430px) {
@@ -204,5 +333,8 @@ select {
   }
   .logo {
     display: none;
+  }
+  .pizza-wrapper {
+    margin-right: 45px;
   }
 }
