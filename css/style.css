@@ -245,6 +245,55 @@ select {
 .section-pizza-second {
   margin-top: 80px;
 }
+.button-cart {
+  text-decoration: none;
+}
+.cart {
+  padding-top: 163px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-title {
+  margin: auto;
+  width: 290px;
+  height: 39px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  line-height: 10px;
+}
+.cart-text {
+  padding-top: 10px;
+  text-align: center;
+  color: #777777;
+  margin: auto;
+  font-size: 18px;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  line-height: 145%;
+  margin-bottom: 47px;
+}
+.button-cart-back {
+  text-decoration: none;
+}
+.cart-button {
+  text-decoration: none;
+  border-radius: 100px;
+  height: 46px;
+  width: 210px;
+  background-color: #282828;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 88px;
+  margin-bottom: 180px;
+}
+
 @media (max-width: 1150px) {
   .menu-wrapper {
     padding: 1.125rem 1.75rem;
