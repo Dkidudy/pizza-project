@@ -52,375 +52,553 @@
       </div>
     </div>
     <section class="section section-pizza">
-      <div class="container">
-        <div class="separartor">
-          <h2 class="section-title">Все пиццы</h2>
-          <!--первый блок  -->
-          <div class="pizza-types">
-            <ul class="pizza-wrapper">
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img src="/img/pizza/burg-pizza.png" alt="index/index.html" />
-                </span>
-                <h3 class="pizza-title">Чизбургер-пицца</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity">
-                  <div class="price">от 395 ₽</div>
+      <h2 class="section-title">Все пиццы</h2>
+      <!--первый блок  -->
+      <div>
+        <ul class="pizza-wrapper">
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/burg-pizza.png" alt="Чизбургер-пицца" />
+            </div>
+            <h3 class="truncate">Чизбургер-пицца</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-1"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-1"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
 
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                    <span class="pill-quantity">2</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/chees-pizza.png"
-                    alt="index/index.html"
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-1"
+                    value="26"
+                    checked
                   />
-                </span>
-                <h3 class="pizza-title">Сырная</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 450 ₽</div>
-
-                  <button class="pill pill-full">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/shrimp-pizza.png"
-                    alt="index/index.html"
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-1"
+                    value="30"
                   />
-                </span>
-                <h3 class="pizza-title">Креветки по-азиатски</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 290 ₽</div>
-
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/chees-chiсken.png"
-                    alt="index/index.html"
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-1"
+                    value="40"
                   />
-                </span>
-                <h3 class="pizza-title">Сырный цыпленок</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 385 ₽</div>
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity">
+              <div class="price">от 395 ₽</div>
 
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+              <button class="button">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+                <span class="button-quantity">2</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/chees-pizza.png" alt="Сырная-пицца" />
+            </div>
+            <h3 class="pizza-title">Сырная</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-3"
+                  value="thin"
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-3"
+                  value="traditional"
+                  checked
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-3"
+                    value="26"
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-3"
+                    value="30"
+                    checked
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-3"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 450 ₽</div>
+
+              <button class="button button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img
+                src="/img/pizza/shrimp-pizza.png"
+                alt="Креветки по-азиатски"
+              />
+            </div>
+            <h3 class="truncate">Креветки по-азиатски</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-4"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-4"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-4"
+                    value="26"
+                    checked
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-4"
+                    value="30"
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-4"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 290 ₽</div>
+
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/chees-chiсken.png" alt="Сырный цыпленок" />
+            </div>
+            <h3 class="truncate">Сырный цыпленок</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-8"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-8"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="26"
+                    checked
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="30"
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 385 ₽</div>
+
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/burg-pizza.png" alt="Чизбургер-пицца" />
+            </div>
+            <h3 class="truncate">Чизбургер-пицца</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-5"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-5"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-5"
+                    value="26"
+                    checked
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-5"
+                    value="30"
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-5"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity">
+              <div class="price">от 385 ₽</div>
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/chees-pizza.png" alt="Сырная-пицца" />
+            </div>
+            <h3 class="truncate">Сырная</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-6"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-6"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-6"
+                    value="26"
+                    checked
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-6"
+                    value="30"
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-6"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 385 ₽</div>
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img
+                src="/img/pizza/shrimp-pizza.png"
+                alt="Креветки по-азиатски"
+              />
+            </div>
+            <h3 class="truncate">Креветки по-азиатски</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-7"
+                  value="thin"
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-7"
+                  value="traditional"
+                  checked
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-7"
+                    value="26"
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-7"
+                    value="30"
+                    checked
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-7"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 385 ₽</div>
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+          <li class="pizza-item">
+            <div class="pizza-photo">
+              <img src="/img/pizza/chees-chiсken.png" alt="Сырный цыпленок" />
+            </div>
+            <h3 class="truncate">Сырный цыпленок</h3>
+            <div class="check-block">
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-8"
+                  value="thin"
+                  checked
+                />
+                <span class="check-box">тонкое</span>
+              </label>
+              <label class="check">
+                <input
+                  class="check-input"
+                  type="radio"
+                  name="dough-8"
+                  value="traditional"
+                />
+                <span class="check-box">традиционное</span>
+              </label>
+
+              <div class="second-check-block">
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="26"
+                    checked
+                  />
+                  <span class="check-box">26 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="30"
+                  />
+                  <span class="check-box">30 см</span>
+                </label>
+                <label class="check">
+                  <input
+                    class="check-input"
+                    type="radio"
+                    name="size-8"
+                    value="40"
+                  />
+                  <span class="check-box">40 см</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- /.check-block -->
+            <div class="price-quantity price-full">
+              <div class="price">от 385 ₽</div>
+              <button class="button-full">
+                <span class="button-plus">+</span>
+                <span class="button-text">Добавить</span>
+              </button>
+            </div>
+          </li>
+        </ul>
       </div>
-      <!-- /.container -->
-    </section>
-    <section class="section section-pizza-second">
-      <div class="container">
-        <div class="separartor">
-          <!--первый блок  -->
-          <div class="pizza-types">
-            <ul class="pizza-wrapper">
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img src="/img/pizza/burg-pizza.png" alt="index/index.html" />
-                </span>
-                <h3 class="pizza-title">Чизбургер-пицца</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity">
-                  <div class="price">от 395 ₽</div>
 
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/chees-pizza.png"
-                    alt="index/index.html"
-                  />
-                </span>
-                <h3 class="pizza-title">Сырная</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 450 ₽</div>
-
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/shrimp-pizza.png"
-                    alt="index/index.html"
-                  />
-                </span>
-                <h3 class="pizza-title">Креветки по-азиатски</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 290 ₽</div>
-
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-              <li class="pizza-item">
-                <span class="pizza-photo">
-                  <img
-                    src="/img/pizza/chees-chiсken.png"
-                    alt="index/index.html"
-                  />
-                </span>
-                <h3 class="pizza-title">Сырный цыпленок</h3>
-                <div class="check-grid">
-                  <label class="check">
-                    <input class="check-input" type="checkbox" checked />
-                    <span class="check-box">тонкое</span>
-                  </label>
-                  <label class="check">
-                    <input class="check-input" type="checkbox" />
-                    <span class="check-box">традиционное</span>
-                  </label>
-                  <!-- /.second-check-grid -->
-                  <div class="second-check-grid">
-                    <label class="check">
-                      <input class="check-input" type="checkbox" checked />
-                      <span class="check-box">26 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">30 см</span>
-                    </label>
-                    <label class="check">
-                      <input class="check-input" type="checkbox" />
-                      <span class="check-box">40 см</span>
-                    </label>
-                  </div>
-                  <!-- /.second-check-grid -->
-                </div>
-                <!-- /.check-grid -->
-                <div class="price-quantity price-full">
-                  <div class="price">от 385 ₽</div>
-
-                  <button class="pill">
-                    <span class="pill-plus">+</span>
-                    <span class="pill-text">Добавить</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <!-- /.container -->
     </section>
   </body>
