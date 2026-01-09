@@ -5,7 +5,12 @@ body {
   margin: 0;
   font-family: "Proxima Nova", Arial, sans-serif;
 }
-.truncate {
+.pizza-title {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  margin: 30px auto;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -168,14 +173,14 @@ select {
   transition: background 0.15s ease, box-shadow 0.15s ease,
     border-color 0.15s ease;
 }
-.second-check-block {
+.subcheck-block {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 0;
   width: 345px;
 }
-.second-check-block .check {
+.subcheck-block .check {
   flex: 0 0 calc((100% - 20px) / 3);
 }
 .check-input:checked + .check-box {
@@ -239,6 +244,14 @@ select {
   color: #fff;
   transition: 0.3s;
 }
+.button:hover {
+  background-color: #fe5f1e;
+  color: #fff;
+  transition: 0.3s;
+}
+.button-quantity:hover {
+  display: none;
+}
 .price-full {
   gap: 93px;
 }
@@ -292,8 +305,13 @@ select {
   margin-right: auto;
   margin-top: 88px;
   margin-bottom: 180px;
+  cursor: pointer;
 }
-
+.pizza-photo {
+  max-width: 360px;
+  max-height: 260px;
+  justify-content: center;
+}
 @media (max-width: 1150px) {
   .menu-wrapper {
     padding: 1.125rem 1.75rem;
